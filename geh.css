@@ -1,0 +1,87 @@
+.entireshit{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 70vh;
+}
+
+.container{
+    background: linear-gradient(to top, red, orange, yellow, green , blue, indigo, violet );
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.question{
+    font-size: 50px;
+    color: white;
+}
+
+.btnContainers{
+    
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button{
+    padding: 20px;
+    border: white solid;
+    border-radius: 8px;
+    font-weight: 900;
+    color: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+#yesBtn{
+    background: linear-gradient(to top, red, orange, yellow, green , blue, indigo, violet );
+    
+}
+
+#noBtn{
+    background-color: red;
+    
+}
+
+#noBtn:focus{
+    animation: noanimation 0.5s ease-in-out infinite;
+}
+
+@keyframes noanimation{
+    0%{
+        transform: rotate(0deg) translateY(100px);
+    }
+
+    20%{
+        transform: rotate(-10deg) translateY(-100px);
+    }
+
+    40%{
+        transform: rotate(10deg);
+    }
+
+    60%{
+        transform: rotate(-10deg);
+    }
+
+    80%{
+        transform: rotate(10deg);
+    }
+
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+
+
+#hellnahBtn{
+    background-color: blue;
+}
