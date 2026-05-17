@@ -47,14 +47,74 @@ button:hover{
 
 #noBtn{
     background-color: red;
+    transition: 0.8s ease;
     
 }
 
-#noBtn:focus{
-    animation: noanimation 0.5s ease-in-out infinite;
+#noBtn:hover{
+   animation: nohover 3s ease-in-out forwards; /*forwards make it stick to final frame */
 }
 
-@keyframes noanimation{
+@keyframes nohover{
+    0%{
+        transform: translateY(0px);
+    }
+
+    10%{
+        transform: translateY(150px);
+    }
+
+    20%{
+        transform: translateY(150px);
+    }
+
+    30%{
+        transform: translateY(150px);
+    }
+
+    40%{
+        transform: translateY(150px);
+    }
+
+    50%{
+        transform: translateY(150px);
+    }
+
+    60%{
+        transform: translateY(150px);
+    }
+
+    70%{
+        transform: translateY(150px);
+    }
+
+    80%{
+        transform: translateY(150px);
+    }
+
+    90%{
+        transform: translateY(150px);
+    }
+
+    100%{
+        transform: translateY(150px);
+    }
+}
+
+
+
+
+#hellnahBtn{
+    background-color: blue;
+}
+
+
+#yesBtn:focus{
+    animation: yesanimation 0.5s ease-in-out infinite;
+
+}
+
+@keyframes yesanimation{
     0%{
         transform: rotate(0deg) translateY(100px);
     }
@@ -78,10 +138,4 @@ button:hover{
     100%{
         transform: rotate(-10deg);
     }
-}
-
-
-
-#hellnahBtn{
-    background-color: blue;
 }
