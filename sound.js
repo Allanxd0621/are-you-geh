@@ -14,15 +14,23 @@ document.getElementById('noBtn').onfocus = function(){
     noPlay();
 }
 
-function containerPlay(){
-    const containerSound = document.getElementById('rusure');
-    containerSound.pause();
-    containerSound.currentTime = 0;
-    containerSound.play();
+document.getElementById('noBtn').onmouseenter = function(){
+    noPlay();
+}
+
+function rusurePlay(){
+    const rusure = document.getElementById('rusure');
+    rusure.pause();
+    rusure.currentTime = 0;
+    rusure.play();
 
 }
 
-document.getElementById('btnContainers').onmouseenter = function(){
-    containerPlay();
+document.getElementById('yesBtn').onmouseenter = function(){
+    rusurePlay();
+}
+
+document.getElementById('hellnahBtn').onmouseenter = function(){
+    rusurePlay();
 }
 
